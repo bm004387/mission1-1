@@ -1,0 +1,151 @@
+@charset "UTF-8";
+@font-face {
+    font-family: '미원';
+    src: url('../미원Miwon.otf') format('opentype');
+}
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #333333;
+    font-family: '미원';
+}
+
+body{
+    width: 100%;
+    background-color: #ffffff;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.wrapper{
+    width: 100%;
+    height: 160px;
+    border-bottom: 3px solid #333;
+}
+header{
+    /* 상단 높이 */
+    height: 100px;
+    /* 상단 너비 */
+    width: 100px;
+}
+
+/* .logo와 .menu를 묶어줌 */
+.top{
+    /* 상단 로고와 메뉴가 들어가는 곳 높이 */
+    height: 100px;
+    /* 상단 로고와 메뉴가 들어가는 곳 너비 */
+    width: 1000px;
+}
+
+/* 로고 영역 스타일 적용 */
+.logo{
+    float: left;
+    /* 로고 영역 높이 */
+    height: 100px;
+    /* 로고 영역 너비 */
+    width: 200px;
+    margin: 10px 30px 0 100px;
+}
+
+.logo img{
+    float: left;
+    height: 70px;
+    width: 220px;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.menu{
+    float: right;
+    height: 100px;
+    width: 800px;
+    margin-right: -400px;
+    z-index: 1;
+}
+
+.navi{
+    float: right;
+    margin-top: 40px;
+    margin-right: 10px;
+}
+
+.navi > li{
+    float: left;
+}
+
+.navi > li > a{
+    height: 70px;
+    width: 155px;
+    line-height: 70px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #0066ad;
+    color: #ffffff;
+}
+
+.navi > li > a:hover{
+    background-color: #30a3f3;
+}
+
+.submenu{
+    width: 155px;
+    position: absolute;
+    display: none;
+    z-index: 1;
+}
+
+.submenu > li > a{
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #ababab;
+    color: #ffffff;
+}
+
+.submenu > li > a:hover{
+    background-color: #30a3f3;
+}
+.join{
+    margin: 60px auto;
+    width: 1000px;
+}
+strong{
+    color: #F45D5C;
+}
+div > li{
+    padding: 30px;
+    font-family: "맑은 고딕";
+}
+div > p{
+    padding: 30px;
+}
+option{
+    font-family: "맑은 고딕";
+}
+input{
+    margin-bottom: 10px;
+    font-family: "맑은 고딕";
+}
+.address{
+    margin-left: 30px;
+}
+#button{
+    display: inline-block;
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    font-size: 30px;
+    font-family: '미원';
+    background: #0066ad;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    margin-left: 220px;
+    cursor: pointer;
+}
