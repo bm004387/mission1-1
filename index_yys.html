@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>남율건설</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/jquery-2.2.4.min.js"></script>
+    <!-- defer 속성은 script가 잠깐 지연 되도록 하여 -->
+    <!-- HTML 구문 분석이 완료된 후 스크립트를 실행하도록 함 -->
+    <script src="javascript/script.js" defer type="text/javascript"></script>
+    <script src="javascript/jquery.cookie.js"></script>
+    <script src="javascript/vegas.min.js"></script>
+</head>
+<body>
+    <div id="notice_wrap">
+        <img src="images/icon1.jpg" alt="공지사항이미지" width="300px" height="300px">
+        <p class="closeWrap">
+            <input type="checkbox" name="expiresChk" id="expiresChk">
+            <label for="expiresChk">3일동안 이 창 열지 않기</label>
+            <button class="closeBtn">닫기</button>
+        </p>
+    </div>
+    <!-- 레이어 팝업창 영역 -->
+    <div id="modal">
+        <div class="modal_up">
+            <div class="uptitle">
+                상반기 신입/경력 사원 채용 공고
+            </div>
+            <div class="upbody">
+                국내 최고의 건설회사로 발돋움하고 있는 남율건설에서는
+                열정을 가지고 진취적으로 도전하는 신입/경력 사원을 모집합니다.
+                남율건설과 함께 하실 역량있는 인재들의 많은 지원을 기다립니다.
+            </div>
+            <div class="btn">닫기</div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+    <header>
+        <!-- .top은 .logo와 .menu를 묶어줌 -->
+        <div class="top">
+            <div class="logo">
+                <a href="index_yys.html"><img src="images/logo.svg" alt="로고 이미지"></a>
+            </div>
+            <nav class="menu">
+                <ul class="navi">
+                    <li>
+                        <a href="#">회사소개</a>
+                        <ul class="submenu">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="index.html">회사소개 영상</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    <a href="#">사업영역</a>
+                    <ul class="submenu">
+                        <li><a href="#">주택사업</a></li>
+                        <li><a href="#">건축사업</a></li>
+                        <li><a href="#">인테리어</a></li>
+                    </ul>
+                    </li>
+                    <li>
+                        <a href="#">입주정보</a>
+                        <ul class="submenu">
+                            <li><a href="#">입주단지</a></li>
+                            <li><a href="#">입주캘린더</a></li>
+                            <li><a href="#">입주모임</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">인재채용</a>
+                        <ul class="submenu">
+                            <li><a href="#">직무소개</a></li>
+                            <li><a href="#">채용공고</a></li>
+                            <li><a href="#">기술교육</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">로그인</a>
+                        <ul class="submenu">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">아이디찾기/비밀번호찾기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="center bg-holder" data-width="1200" data-height="600">
+        <div>
+
+        </div>
+    </div>
+    
+    <!-- .bodywrap은 .imgslide와 .contents를 묶어줌 -->
+    <div class="bodywrap">
+        <div class="imgslide">
+            <a href="#">
+                <img src="images/bx_1.jpg" alt="이미지 1" width="100%" height="100%">
+                <span class="imgtext">모델하우스 VR 체험</span>
+            </a>
+            <a href="#">
+                <img src="images/bx_2.jpg" alt="이미지 2" width="100%" height="100%">
+                <span class="imgtext">모델하우스 VR 체험</span>
+            </a>
+            <a href="#">
+                <img src="images/bx_3.jpg" alt="이미지 3" width="100%" height="100%">
+                <span class="imgtext">모델하우스 VR 체험</span>
+            </a>
+            <a href="#">
+                <img src="images/bx_4.jpg" alt="이미지 4" width="100%" height="100%">
+                <span class="imgtext">모델하우스 VR 체험</span>
+            </a>
+            <a href="#">
+                <img src="images/bx_5.jpg" alt="이미지 5" width="100%" height="100%">
+                <span class="imgtext">모델하우스 VR 체험</span>
+            </a>
+        </div>
+        <div class="contents">
+            <div class="notice">
+                <div class="tab">
+                    <h4>공지사항</h4>
+                </div>
+                <ul>
+                    <li><a href="#">
+                    상반기 신입/경력 사원 채용 공고
+                    <span>2022.05.10</span>
+                    </a></li>                    
+                    <li><a href="#">
+                    건설의 날 기념 행사를 안내해 드립니다.
+                    <span>2022.05.11</span>
+                    </a></li>
+                    <li><a href="#">
+                    대학생 대상 건설현장 탐방기
+                    <span>2022.05.12</span>
+                    </a></li>
+                    <li><a href="#">
+                    남율건설, 시공평가 순위 상위 5위 달성
+                    <span>2022.05.13</span>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="gallery">
+                <div class="tab">
+                    <h4>갤러리</h4>
+                </div>
+                <ul class="vegas">
+                   
+                </ul>
+            </div>
+            <div class="shortcut">
+                <a href="#">
+                    <img src="images/shortcut.jpg" alt="바로가기">
+                    <span class="sctext">바로가기</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copy">
+            COPYRIGHT ©	by WEBDESIGN. ALL RIGHTS RESERVED
+        </div>
+        <div class="site">
+            <div class="btmenu">
+                <ul>
+                    <li><a href="#">하단메뉴1</a></li>
+                    <li><a href="#">하단메뉴2</a></li>
+                    <li><a href="#">하단메뉴3</a></li>
+                </ul>
+            </div>
+            <div class="familysite">
+                <select name="sitelist">
+                    <option value="#">패밀리사이트1</option>
+                    <option value="#">패밀리사이트2</option>
+                    <option value="#">패밀리사이트3</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="javascript/jquery.parallax-scroll.min.js"></script>
+    <script>
+        $(function(){
+            $(window).resize(function(){
+                    $('.container').width($(window).width()).height($(window).height)
+                });
+                setTimeout(function(){
+                    $(window).resize()},1000);
+            $('.bg-holder').parallaxScroll({
+                // parallax-Scroll플러그인의 옵션은 friction 옵션 하나뿐입니다. 이 옵션값은 0에서 1사이의 소수로 표시하는데, 0이면 배경이미지가 콘텐츠를 따라 스크롤 되고, 1이면 배경이 완전히 고정되어 콘텐츠만 스크롤 됩니다. 0과 1사이의 값을 적절히 사용하면 콘텐츠와 배경의 스크롤 속도를 다르게해서 패럴렉스 효과를 낼 수 있습니다.
+                friction: 0.5
+                });
+        })
+    </script>
+</body>
+</html>
