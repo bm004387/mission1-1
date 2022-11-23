@@ -5,8 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/location.css">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1fd591098ea2f7e003009999d0f06a74"></script>
+    <script src="javascript/jquery-2.2.4.min.js"></script>
+    <script src="javascript/location.js"></script>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <header>
+            <!-- .top은 .logo와 .menu를 묶어줌 -->
+            <div class="top">
+                <div class="logo">
+                    <a href="index_yys.html"><img src="images/logo.svg" alt="로고 이미지"></a>
+                </div>
+                <nav class="menu">
+                    <ul class="navi">
+                        <li>
+                            <a href="#">회사소개</a>
+                            <ul class="submenu">
+                                <li><a href="#">인사말</a></li>
+                                <li><a href="index_tubular.html">회사소개 영상</a></li>
+                                <li><a href="#">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                        <a href="#">사업영역</a>
+                        <ul class="submenu">
+                            <li><a href="#">주택사업</a></li>
+                            <li><a href="#">건축사업</a></li>
+                            <li><a href="#">인테리어</a></li>
+                        </ul>
+                        </li>
+                        <li>
+                            <a href="#">입주정보</a>
+                            <ul class="submenu">
+                                <li><a href="#">입주단지</a></li>
+                                <li><a href="#">입주캘린더</a></li>
+                                <li><a href="#">입주모임</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">인재채용</a>
+                            <ul class="submenu">
+                                <li><a href="#">직무소개</a></li>
+                                <li><a href="#">채용공고</a></li>
+                                <li><a href="#">기술교육</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">로그인</a>
+                            <ul class="submenu">
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
+                                <li><a href="#">아이디찾기/비밀번호찾기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        </header>
+        <div class="center">
+            <div class="drt">
+                <h1>찾아오시는 길</h1>
+                <br>
+                <p class="text">LOCATION</p>
+                <br><br>
+                <div id="map"></div>
+            </div>
+            <div class="INFORMATION">
+                <h2>INFORMATION</h2>
+                <p class="text">남율건설 정보</p><br>
+                <p class="info text"> 
+                    Address <br>
+                    서울시 구로구 경인로 557 (구로동 606-4) <br><br>
+                    Tel <br>
+                    02-0000-0000 <br><br>
+                    Fax <br>
+                    02-0000-0001 
+                </p>
+            </div>
+        </div>
+        <script>
+            var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                mapOption = { 
+                    center: new kakao.maps.LatLng(37.50310396776086, 126.87901456552956), // 지도의 중심좌표
+                    level: 2 // 지도의 확대 레벨
+                };
+
+            var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+            // 마커가 표시될 위치입니다 
+            var markerPosition  = new kakao.maps.LatLng(37.50310396776086, 126.87901456552956); 
+
+            // 마커를 생성합니다
+            var marker = new kakao.maps.Marker({
+                position: markerPosition
+            });
+
+            // 마커가 지도 위에 표시되도록 설정합니다
+            marker.setMap(map);
+
+            // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+            // marker.setMap(null);
+        </script>
 </body>
 </html>
