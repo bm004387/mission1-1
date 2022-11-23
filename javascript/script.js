@@ -1,4 +1,4 @@
-jQuery(document).ready(function(){
+$(document).ready(function(){
     $('.navi > li').mouseover(function(){
         $(this).find('.submenu').stop().slideDown(500);
     }).mouseout(function(){
@@ -15,7 +15,6 @@ jQuery(document).ready(function(){
         $(".btn").click(function(){
             $("#modal").removeClass("active");
         });
-        
         if($.cookie('popup') == 'none'){
             $("#notice_wrap").hide();
         }
@@ -26,22 +25,6 @@ jQuery(document).ready(function(){
                 $.cookie("popup", "none", {expires:3, path:"/"});
             }
             $("#notice_wrap").fadeOut("fast");
-
-            $('.vegas').vegas({
-                slides: [
-                    {   src: '/images/vegas_1.jpg' },
-                    {   src: '/images/vegas_2.jpg' },
-                    {   src: '/images/vegas_3.jpg',
-                        video: {
-                            src: [
-                                '/videos/vegas_1.mp4',
-                            ],
-                            loop: false,
-                            mute: true
-                        }
-                    }
-                ]
-            });
         }
     });
     
