@@ -52,10 +52,6 @@ label{
     height: 25px;
     vertical-align: middle;
 }
-.wrapper{
-    /* display: none; */
-}
-
 
 /* 레이어 팝업창(#modal) 배경 스타일 적용 */
 #modal{
