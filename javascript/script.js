@@ -11,12 +11,14 @@ $(document).ready(function(){
         $('.imgslide a:first-child').fadeOut()
         .next('a').fadeIn()
         .end().appendTo('.imgslide');}, 3000);
+
         $(".notice li:first").click(function(){
             $("#modal").addClass("active");
         });
         $(".btn").click(function(){
             $("#modal").removeClass("active");
         });
+        
         if($.cookie('popup') == 'none'){
             $("#notice_wrap").hide();
         }
