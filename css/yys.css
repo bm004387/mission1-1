@@ -323,7 +323,7 @@ header{
 }
 
 .gallery > div{
-    width: 390px;
+    width: 570px;
     height: 40px;
     border-bottom-color:#fabd43;
     border-bottom-width:2px;
@@ -331,7 +331,7 @@ header{
 }
 .vegas{
     float: left;
-    width: 390px;
+    width:570px;
     height: 380px;
     margin-top: 30px;
     background-color: #48487d;
